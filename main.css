@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.board {
+    height: 500px;
+    width: 500px;
+    display: grid;
+}
+
+button {
+    height: 25px;
+    width: 60px;
+}
