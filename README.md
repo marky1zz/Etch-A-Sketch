@@ -1,1 +1,1 @@
-Etch-A-Sketch usin javascript 
+Etch-A-Sketch using javascript 
