@@ -14,11 +14,20 @@
             <div class="board"></div>
         </div>
         <div class="buttons">
-            <button class="black">black</button>
-            <button class="grey">grey</button>
-            <button class="erasor">erasor</button>
-            <button class="reset">reset</button>
-            <button class="set-size">set-size</button>
+            <button onclick="changeColor('black')">black</button>
+            <button onclick="changeColor('grey')">grey</button>
+            <button onclick="changeColor('white')">erasor</button>
+            <button onclick="changeColor('random')">random</button>
+            <button onclick="reset()">reset</button>
+        </div>
+        <div>
+            <input 
+            type="text"
+            placeholder="size of board"
+            value =""
+            onchange="setSize(this.value)"
+            />
+            <button >set-size</button>
         </div>
     </div>
     <script src="app.js"></script>

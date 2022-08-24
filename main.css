@@ -4,10 +4,23 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+    text-align: center;
+    background: linear-gradient(rgba(22, 5, 171, 0.5), white);
+
+}
+
+.flex-container {
+    margin: auto;
+}
+
 .board {
+    margin: 15px 0px;
     height: 500px;
     width: 500px;
     display: grid;
+    background-color: white;
 }
 
 button {
