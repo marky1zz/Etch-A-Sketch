@@ -1,6 +1,7 @@
 let color = "black";
 let click = false;
 
+// Creating the board
 populate = (size) =>
 {
   let board = document.querySelector(".board");
@@ -9,6 +10,7 @@ populate = (size) =>
   board.style.gridTemplateColumns = `repeat(${size} , 1fr)`;
   board.style.gridTemplateRows = `repeat(${size} , 1fr)`;
 
+  // populating the board
   let amount = size * size;
   for (let i = 0; i < amount; i++) {
     let cube = document.createElement("div");
@@ -19,16 +21,19 @@ populate = (size) =>
 }
 
 populate(16);
+
 setSize = (input) =>
 {
     populate(input);
 }
 
+// changing color
 function changeColor(choice)
 {
   color = choice;
 }
 
+// reseting the board
 function reset()
 {
   let board = document.querySelector(".board");
@@ -36,6 +41,7 @@ function reset()
   cube.forEach((div) => (div.style.backgroundColor = "white"));
 }
 
+// coloring the cube
 function colorSquare() 
 {
     if (click) {
